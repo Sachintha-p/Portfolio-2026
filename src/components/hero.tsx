@@ -15,6 +15,7 @@ const Hero = () => {
         <section className="min-h-screen flex items-center justify-center bg-[#0a0118] text-white px-6 pt-24 md:pt-0">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
 
+                {/* LEFT SIDE - Profile Image */}
                 <div className="relative w-64 h-64 md:w-96 md:h-96 flex-shrink-0">
                     <div className="absolute inset-0 bg-[#7c3aed] rounded-full blur-3xl opacity-20 animate-pulse"></div>
                     <img
@@ -24,27 +25,34 @@ const Hero = () => {
                     />
                 </div>
 
+                {/* RIGHT SIDE - Content */}
                 <div className="text-center md:text-left">
-                    <div className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-[#7c3aed] bg-[#7c3aed]/10 border border-[#7c3aed]/30 rounded-full">
-                        AVAILABLE FOR INTERNSHIPS 2026
-                    </div>
 
-                    <h1 className="mb-6 text-5xl font-extrabold md:text-7xl lg:text-8xl text-white leading-tight">
+
+                    <h1 className="mb-4 text-5xl font-extrabold md:text-7xl lg:text-8xl text-white leading-tight">
                         Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#7c3aed] to-purple-400">Sachintha</span>
                     </h1>
 
-                    <p className="max-w-2xl mx-auto md:mx-0 mb-8 text-lg md:text-xl text-slate-300 leading-relaxed">
-                        <span className="text-white font-medium">IT Undergraduate</span> at <span className="text-white">SLIIT</span>.
-                        Specializing in <span className="text-white font-semibold">Web & Mobile Development</span>
-                        with a passion for creating impactful solutions like <span className="text-[#7c3aed]">PETSYNC+</span>.
+                    <p className="max-w-xl mx-auto md:mx-0 mb-10 text-xl md:text-2xl text-slate-300 font-light tracking-wide">
+                        BSc (Hons) Undergraduate in <span className="text-white font-medium">Information Technology</span> at <span className="text-white font-medium">SLIIT</span>.
                     </p>
 
+                    {/* Social Links with Clickable Mail Icon */}
                     <div className="flex gap-6 justify-center md:justify-start mb-10 text-slate-400">
-                        <a href="#" className="hover:text-[#7c3aed] transition-all hover:scale-110"><Github size={30} /></a>
-                        <a href="#" className="hover:text-[#7c3aed] transition-all hover:scale-110"><Linkedin size={30} /></a>
-                        <a href="#" className="hover:text-[#7c3aed] transition-all hover:scale-110"><Mail size={30} /></a>
+                        <a href="https://github.com/Sachintha-p" target="_blank" rel="noopener noreferrer" className="hover:text-[#7c3aed] transition-all hover:scale-110">
+                            <Github size={30} />
+                        </a>
+                        <a href="https://linkedin.com/in/sachintha" target="_blank" rel="noopener noreferrer" className="hover:text-[#7c3aed] transition-all hover:scale-110">
+                            <Linkedin size={30} />
+                        </a>
+
+                        {/* Clickable Mail Button */}
+                        <a href="mailto:sachinthapraneeth18@gmail.com" className="hover:text-[#7c3aed] transition-all hover:scale-110">
+                            <Mail size={30} />
+                        </a>
                     </div>
 
+                    {/* Buttons */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <button
                             onClick={scrollToProjects}
